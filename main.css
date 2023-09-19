@@ -1,5 +1,5 @@
     *{
-      margin-top: 0;
+      margin: 0;
       padding: 0;  
     }
     
@@ -7,11 +7,13 @@
       background: #313A5F;
     }
     .wrapper{
-      display: flex;
-      justify-content: center;
+      width: 900px;
+      margin-inline: auto;
        }
 
-     .wrapper_nav{
+     .nav_menu{
+      padding-top: 30px;
+      display: flex;
         gap: 40px;
         list-style: none;
         color: #FFF;
@@ -21,7 +23,13 @@
         font-weight: 500;
         line-height: normal; 
      }
-     .wrapper_name{
+     .header_section{
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+     }
+     .header_section__title{
+      padding-top: 20px;
         color: #FFF;
         font-family: Inter;
         font-size: 74px;
@@ -29,8 +37,7 @@
         font-weight: 500;
         line-height: normal;
      }
-
-     .wrapper_text{
+     .header_section__text{
         color: #FFF;    
         text-align: justify;
         font-family: Inter;
@@ -40,8 +47,8 @@
         line-height: 136.295%; 
      }
 
-     .wrapper_photo{
-
+     .header_section__photo{
+       padding-top: 20px;
         width: 475px;
         height: 376px; 
      }
@@ -49,16 +56,16 @@
      .section{ 
       background: #F1F1F1; 
      }
-     .portfolio{
-        display: flex;
-        width: 1366px;
-        height: 751px;
-        padding-bottom: 0px;
-        flex-direction: column;
+     .portfolio_section__text{
+      color: #000;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+   }
 
-     }
-
-     .portfolio_name{
+     .portfolio_section__name{
 
         color: #000;
         font-family: Inter;
@@ -67,33 +74,20 @@
         font-weight: 500;
         line-height: normal;
      }
-     .portfolio_text{
-
-        color: #000;
-        font-family: Inter;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-     }
-        .portfolio_photo{
-
+      .portfolio_section__right{
+         padding-top: 60px;
+      }
+        .portfolio_section__photo{
             width: 570px;
             height: 414px; 
         }
-        .portfolio__text{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
         .text_portfolio{
             border-bottom: 2px solid   #313A5F;;
-     
             font-weight: normal; 
             padding-bottom: 3px
         }
 
-        .portfolio_btn{
+        .portfolio_section__btn{
          cursor: pointer;
          border: 2px solid #313A5F;
             color: #FFF;
@@ -106,6 +100,33 @@
             background: #313A5F; 
             height: 45px;
             width: 176px;
+            margin-top: 10px;
+        }
+        .aboutmi_section__name{
+          padding-top: 20px;
+          color: #FFF;
+          font-family: Inter;
+          font-size: 74px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .aboutmi_section__text{
+          margin-top: 15px;
+          color: #FFF;
+          text-align: justify;
+          font-family: Inter;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 136.295%; 
         }
 
-     
+       .aboutmi_section__photo{
+         padding-top: 120px;
+       }
+       
+       .wrapper_project{
+        width: 900px;
+        margin-inline: auto;
+       }
