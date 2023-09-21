@@ -10,9 +10,9 @@
   <header class="bg_blue">
       <div class="wrapper">
           <ul class="nav_menu">
-            <li>Портфолио</li>
-            <li>Обо мне</li>
-            <li>Контакты</li>
+            <li><a class="menu_link" href="#portfolio">Портфолио</a></li>
+            <li><a class="menu_link" href="#aboutmi">Обо мне</a></li>
+            <li><a class="menu_link"  href="#contact">Контакты</a></li>
           </ul>
       </div>
   </header>
@@ -29,20 +29,18 @@
            </div>
         </div>
        </section>
-  <section class="section">
-      <div class="wrapper header_section">
-        <div class="portfolio_section__left">
-          <div>
+  <section class="bg-grey">
+      <div id="portfolio" class="portfolio_wrapper portfolio_section">
+        <div>
+            <h1 class="portfolio_name">Портфолио</h1>
             <div>
-            <h1 class="portfolio_section__name">Портфолио</h1>
-            <p class="portfolio_section__text">AI DIGITAL CORPORATE  PRESENTATION TEMPLATE</p>
+            <p class="portfolio_text">AI DIGITAL CORPORATE  PRESENTATION TEMPLATE</p>
           </div>   
           <div>
-            <img class="portfolio_section__photo" src="Снимок экрана 1445-02-21 в 1.01 1.png" >
+            <img class="portfolio_photo" src="Снимок экрана 1445-02-21 в 1.01 1.png">
           </div>
           </div>
-        </div>
-          <div class="portfolio_section__right">
+          <div>
             <div>
               <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M57.9771 28.32L6.40575 28.32L13.8517 20.8943L12.1786 19.2257L1.87643 29.5L12.1786 39.7743L13.8517 38.1057L6.40575 30.68L57.9771 30.68V28.32Z" fill="black"/>
@@ -50,32 +48,52 @@
               <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.35986 30.68H52.9312L45.4852 38.1057L47.1583 39.7743L57.4605 29.5L47.1583 19.2257L45.4852 20.8943L52.9312 28.32H1.35986V30.68Z" fill="black"/>
               </svg>
-    
             </div>
-            <div class="portfolio_section__line">
+            <div class="portfolio_line">
              <h3 class="text_portfolio">ux / ui design</h3>
              <h3 class="text_portfolio">development</h3>
              <h3 class="text_portfolio">adaptives for tablet and phone</h3>
              <h3 class="text_portfolio">animation support</h3>
-             <button class="portfolio_section__btn">Посмотреть</button>
+             <button class="portfolio_btn">Посмотреть</button>
             </div>
-          </div>
+        </div>
          </section>
          <section class="bg_blue">
-         <div class="wrapper header_section">
-          <div class="aboutmi_section__left">
-           <h1 class="aboutmi_section__name">
+         <div id="aboutmi" class="aboutmi_wrapper aboutmi_section">
+          <div class="aboutmi_left">
+           <h1 class="aboutmi_name">
             Обо мне
            </h1>
-           <p class="aboutmi_section__text">
+           <p class="aboutmi_text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
            </p>
           </div>
-          <div class="aboutmi_section__right">
+          <div class="aboutmi_right">
             <div>
-              <img class="aboutmi_section__photo" src="/Снимок экрана 1445-01-29 в 7.17 1.png">
+              <img class="aboutmi_photo" src="/Снимок экрана 1445-01-29 в 7.17 1.png">
             </div>
           </div>
-         </div>
+         </div> 
+         <section class="bg-grey">
+          <div id="contact" class="contact_wrapper">
+          <h1 class="contact_title">Обсудим проект?</h1>
+          <div>
+            <p class="contact_text">Заполните форму обратной связи</p>
+          </div>
+          <input class="contact_input" type="text" value="Мустафа">
+            <input class="contact_input" type="text" value="mail@example.com">
+            <input class="contact_input" type="text" value="+7928 777 65 55">
+            <button class="contact_btn">Отправить</button>
+            <p class="contact__text">Или свяжитесь со мной удобным способом связи, расположенным ниже</p>
+            <nav>
+              <ul class="menu">
+                <li><a class="menu_line"  href="">TELEGRAM</a></li>
+                <li><a class="menu_line" href="">WHATSAPP</a></li>
+                <li><a class="menu_line" href="">INSTAGRAM</a></li>
+                <li><a class="menu_line" href="">E-MAIL</a></li>
+              </ul>
+            </nav>
+        </div>
+         </section>
 </body>
 </html>
