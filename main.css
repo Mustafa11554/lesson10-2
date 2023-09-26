@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 
 .bg_blue {
@@ -210,7 +212,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
-  margin: 68px;
+  margin-block: 40px;
   list-style: none;
   font-size: 34px;
   gap: 60px;
