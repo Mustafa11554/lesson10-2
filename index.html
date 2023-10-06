@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>Document</title>
-  <script src="https://unpkg.com/imask"></script>
-  <script defer src="./main.js"></script>
-</head>
-<body>
-  <header class="bg_blue">
-      <div class="wrapper">
-          <ul class="nav_menu">
-            <li><a class="menu_link" href="#portfolio">Портфолио</a></li>
-            <li><a class="menu_link" href="#aboutmi">Обо мне</a></li>
-            <li><a class="menu_link"  href="#contact">Контакты</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+    <script src="https://unpkg.com/imask"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="bg-blue">
+      <nav class="container">
+        <a href="#portfolio">Портфолио</a>
+        <a href="#aboutmi">Обо мне</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+    <section class="bg-blue">
+      <div class="container introduction">
+        <div>
+          <h1 class="introduction__header">Меня зовут Мустафа</h1>
+          <p class="introduction__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div>
+          <img src="images/me.png" class="introduction__img" />
+        </div>
       </div>
-  </header>
-  <section class="bg_blue">
-        <div class="wrapper header_section padding-block-100">
-          <div class="header_section__left">
-            <h1 class="header_section__title">
-                Меня зовут Мустафа             
-              </h1>
-                <p class="header_section__text">Lorem Ipsum is simply  dummy text of the printing  and typesetting industry.</p>
-             </div>
-            <div class="header_section__right">
-               <img class="header_section__photo" src="Снимок экрана 1445-01-29 в 7.17 1.png" >
-           </div>
-        </div>
-       </section>
-       <section>
-        <div class="container">
-            <div id="portfolio" class="portfolio">
-                <h1 class="portfolio__title">Портфолио</h1>
-                <div class="portfolio__template">
-                    <p class="portfolio__option">AI DIGITAL CORPORATE PRESENTATION TEMPLATE</p>
-                    <div class="portfolio__template__arrow">
-                        <img class="portfolio__arrow__img" src="img/VectorLeft.png" alt="">
-                        <img class="portfolio__arrow__img" src="img/VectorRight.png" alt="">
-                    </div>
-                </div>
-                <div class="portfolio__info">
-                   <img class="portfolio__img" src="img/portfolio-img.png" alt="">
-                   <div class="portfolio__skills">
-                        <p class="portfolio__skill">ux / ui design</p>
-                        <p class="portfolio__skill">development</p>
-                        <p class="portfolio__skill">adaptives for tablet and phone</p>
-                        <p class="portfolio__skill">animation support</p>
-                        <button class="portfolio__btn">Посмотреть</button>
-                   </div>
-                </div>
-            </div>
-        </div>
     </section>
-         <section class="bg_blue">
-         <div id="aboutmi" class="aboutmi_wrapper aboutmi_section padding-block-100">
-          <div class="aboutmi_left">
-           <h1 class="aboutmi_name">
-            Обо мне
-           </h1>
-           <p class="aboutmi_text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-           </p>
+    <section id="portfolio" class="bg-grey">
+      <div class="portfolio container">
+        <h1 class="portfolio__title">Портфолио</h1>
+        <div class="portfolio__arrows">
+          <img class="portfolio__arrow-img" src="images/arrow 3.png" alt="" />
+          <img class="portfolio__arrow-img" src="images/arrow 2.png" alt="" />
+        </div>
+        <div class="portfolio__template">
+          <p class="portfolio__option">
+            AI DIGITAL CORPORATE PRESENTATION TEMPLATE
+          </p>
+        </div>
+        <div class="portfolio__info">
+          <img class="portfolio__img" src="images/portfolio-img.png" alt="" />
+          <div class="portfolio__skills">
+            <p class="portfolio__skill">ux / ui design</p>
+            <p class="portfolio__skill">development</p>
+            <p class="portfolio__skill">adaptives for tablet and phone</p>
+            <p class="portfolio__skill">animation support</p>
+            <button class="portfolio__btn">Посмотреть</button>
           </div>
-          <div class="aboutmi_right">
-            <div>
-              <img class="aboutmi_photo" src="/Снимок экрана 1445-01-29 в 7.17 1.png">
-            </div>
+        </div>
+      </div>
+    </section>
+    <section  id="aboutmi"  class="bg-blue">
+      <div class="wrapper aboutmi">
+        <div>
+          <h1 class="aboutmi__name">Обо мне</h1>
+          <p class="aboutmi__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+        <div>
+          <div>
+            <img class="aboutmi__photo" src="images/me.png" />
           </div>
-         </div> 
-         </section>
-          <div class="conteiner">
-          <div id="contact" class="contact_wrapper">
+        </div>
+      </div>
+    </section>
+    <section  id="contact"  class="bg-grey">
+      <div class="conteiner">
+        <div class="contact">
           <h1 class="contact_title textcenter">Обсудим проект?</h1>
           <div>
             <p class="contact_text textcenter">Заполните форму обратной связи</p>
           </div>
           <div>
             <p>Ваше имя</p>
-            <input class="contact_input" type="text" placeholder="Мустафа">
+            <input class="contact__input" type="text" placeholder="Мустафа">
           </div>
           <div>
             <p>Ваше email</p>
-            <input  class="contact_input" type="text" placeholder="mail@example.com">
+            <input id="email" class="contact__input" type="email" placeholder="mail@example.com">
           </div>
           <div>
             <p>Ваш телефон</p>
-            <input id="phone-mask" class="contact_input" type="text" placeholder="+7928 777 65 55">
+            <input id="phone-mask" class="contact__input" type="text" placeholder="+7928 777 65 55">
           </div>
-            <button class="contact_btn">Отправить</button>
+            <button class="contact__btn">Отправить</button>
             <p class="contact__text">Или свяжитесь со мной удобным способом связи, расположенным ниже</p>
             <nav>
               <ul class="menu">
-                <li><a class="menu_line"  href="">TELEGRAM</a></li>
-                <li><a class="menu_line" href="">WHATSAPP</a></li>
-                <li><a class="menu_line" href="">INSTAGRAM</a></li>
-                <li><a class="menu_line" href="">E-MAIL</a></li>
+                <li><a class="menu__line"  href="">TELEGRAM</a></li>
+                <li><a class="menu__line" href="">WHATSAPP</a></li>
+                <li><a class="menu__line" href="">INSTAGRAM</a></li>
+                <li><a class="menu__line" href="">E-MAIL</a></li>
               </ul>
             </nav>
         </div>
-        </div>
-</body>
+      </div>
+    </section>
+  </body>
 </html>
