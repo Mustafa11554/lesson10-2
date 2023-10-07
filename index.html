@@ -12,7 +12,7 @@
     <header class="bg-blue">
       <nav class="container">
         <a href="#portfolio">Портфолио</a>
-        <a href="#aboutmi">Обо мне</a>
+        <a href="#about">Обо мне</a>
         <a href="#contact">Контакты</a>
       </nav>
     </header>
@@ -54,11 +54,11 @@
         </div>
       </div>
     </section>
-    <section  id="aboutmi"  class="bg-blue">
-      <div class="wrapper aboutmi">
-        <div>
-          <h1 class="aboutmi__name">Обо мне</h1>
-          <p class="aboutmi__text">
+    <section id="about" class="bg-blue">
+      <div class="wrapper about">
+        <div class="about__article">
+          <h1 class="about__title">Обо мне</h1>
+          <p class="about__bio">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -67,40 +67,54 @@
         </div>
         <div>
           <div>
-            <img class="aboutmi__photo" src="images/me.png" />
+            <img class="about__image" src="images/me.png" />
           </div>
         </div>
       </div>
     </section>
-    <section  id="contact"  class="bg-grey">
-      <div class="conteiner">
+    <section id="contact" class="bg-grey">
+      <div class="container">
         <div class="contact">
-          <h1 class="contact_title textcenter">Обсудим проект?</h1>
+          <h1 class="contact__title text-center">Обсудим проект?</h1>
           <div>
-            <p class="contact_text textcenter">Заполните форму обратной связи</p>
+            <p class="contact__text text-center">
+              Заполните форму обратной связи
+            </p>
           </div>
           <div>
             <p>Ваше имя</p>
-            <input class="contact__input" type="text" placeholder="Мустафа">
+            <input class="contact__input" type="text" placeholder="Мустафа" />
           </div>
           <div>
             <p>Ваше email</p>
-            <input id="email" class="contact__input" type="email" placeholder="mail@example.com">
+            <input
+              id="email"
+              class="contact__input"
+              type="email"
+              placeholder="mail@example.com"
+            />
           </div>
           <div>
             <p>Ваш телефон</p>
-            <input id="phone-mask" class="contact__input" type="text" placeholder="+7928 777 65 55">
+            <input
+              id="phone-mask"
+              class="contact__input"
+              type="text"
+              placeholder="+7928 777 65 55"
+            />
           </div>
-            <button class="contact__btn">Отправить</button>
-            <p class="contact__text">Или свяжитесь со мной удобным способом связи, расположенным ниже</p>
-            <nav>
-              <ul class="menu">
-                <li><a class="menu__line"  href="">TELEGRAM</a></li>
-                <li><a class="menu__line" href="">WHATSAPP</a></li>
-                <li><a class="menu__line" href="">INSTAGRAM</a></li>
-                <li><a class="menu__line" href="">E-MAIL</a></li>
-              </ul>
-            </nav>
+          <button class="contact__btn">Отправить</button>
+          <p class="contact__text">
+            Или свяжитесь со мной удобным способом связи, расположенным ниже
+          </p>
+          <nav>
+            <ul class="menu">
+              <li><a class="menu__line" href="">TELEGRAM</a></li>
+              <li><a class="menu__line" href="">WHATSAPP</a></li>
+              <li><a class="menu__line" href="">INSTAGRAM</a></li>
+              <li><a class="menu__line" href="">E-MAIL</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>

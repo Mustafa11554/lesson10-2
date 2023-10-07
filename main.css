@@ -5,6 +5,9 @@
 .bg-blue {
   background-color: #313a5f;
 }
+.bg-grey {
+  background: #f1f1f1;
+}
 .container {
   width: 1120px;
   margin-inline: auto;
@@ -41,86 +44,83 @@ nav > a {
   line-height: normal;
 }
 
-.introduction__text{
-  color: #FFF;
+.introduction__text {
+  color: #fff;
   text-align: justify;
   font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 136.295%; 
+  line-height: 136.295%;
 }
-.bg-grey{
-  background: #F1F1F1;
+.portfolio {
+  padding-block: 150px;
+  position: relative;
 }
-
-.portfolio{
-   padding-block: 150px;
-   position: relative;
-}
-.portfolio__title{
+.portfolio__title {
   font-size: 74px;
   font-weight: 500;
   margin-bottom: 100px;
 }
-.portfolio__template{
+.portfolio__template {
   display: flex;
   align-items: center;
   margin-bottom: 89px;
 }
-.portfolio__option{
+.portfolio__option {
   font-size: 32px;
   width: 570px;
   margin-right: 407px;
 }
-.portfolio__arrows{
+.portfolio__arrows {
   display: flex;
   gap: 24px;
   position: absolute;
   right: 0;
 }
-.portfolio__info{
+.portfolio__info {
   display: flex;
   justify-content: space-between;
   gap: 60px;
 }
-.portfolio__img{
+.portfolio__img {
   width: 570px;
   height: 414px;
 }
-.portfolio__skill{
+.portfolio__skill {
   font-size: 32px;
   border-bottom: 2px solid black;
   margin-bottom: 35px;
 }
-.portfolio__skills{
+.portfolio__skills {
   flex: 1 1 100%;
 }
-.portfolio__btn{
+.portfolio__btn {
   margin-top: 40px;
   padding: 20px 50px;
   border-radius: 44px;
-  background-color: #313A5F;
+  background-color: #313a5f;
   color: white;
   font-size: 24px;
   border: none;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
-.portfolio__btn:hover{
-  background-color: #414C79;
+.portfolio__btn:hover {
+  background-color: #414c79;
 }
 .wrapper {
   width: 1120px;
   margin-inline: auto;
 }
-.aboutmi {
+.about {
   display: flex;
   justify-content: center;
   gap: 60px;
-  padding: 54px 0 100px 0;
+  padding: 80px 0 100px 0;
 }
-.aboutmi__name {
+
+.about__title {
   padding-block: 35px;
   color: #fff;
   font-family: Inter;
@@ -129,8 +129,7 @@ nav > a {
   font-weight: 500;
   line-height: normal;
 }
-.aboutmi__text {
-  margin-top: 15px;
+.about__bio {
   color: #fff;
   text-align: justify;
   font-family: Inter;
@@ -140,37 +139,42 @@ nav > a {
   line-height: 136.295%;
 }
 
-.aboutmi__photo {
-  padding-top: 120px;
+.about__image {
+  padding-block: 126px 83px;
 }
-.conteiner{
-  width: 1120px;
-  margin-inline: auto;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.contact{
-  padding: 150px;
-}
-.contact_title {
+.contact__title {
+  padding-top: 150px;
   font-size: 74px;
   font-weight: 500;
   margin-bottom: 100px;
 }
-.textcenter{
+.text-center {
   text-align: center;
- }
-.contact_text {
+}
+.contact__text {
   font-size: 32px;
   margin-bottom: 50px;
 }
 .contact__input {
   width: 820px;
   padding: 20px 0 20px 40px;
-  border: 2px solid #313A5F;
+  border: 2px solid #313a5f;
+  font-size: 24px;
   border-radius: 58px;
   margin-bottom: 35px;
+  background-color: transparent;
 }
-.contact__btn:hover{
-  background-color: #414C79;
+.contact__input::placeholder {
+  color: #a6a6a6;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .contact__btn {
   display: flex;
@@ -188,12 +192,14 @@ nav > a {
   font-weight: 500;
   line-height: normal;
   cursor: pointer;
-  margin-left: 25px;
+}
+.contact__btn:hover {
+  background-color: #414c79;
 }
 .contact__text {
   margin-top: 50px;
   text-align: center;
-  font-size: 32px;  
+  font-size: 32px;
 }
 .menu {
   display: flex;
